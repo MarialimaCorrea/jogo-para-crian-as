@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Missão Matemática</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section id="tela-inicial" class="tela">
+            <div class="icone">🧠</div>
+
+            <h1>Missão Matemática</h1>
+
+            <p>
+                Prepare-se para testar seus conhecimentos!
+                Resolva os desafios matemáticos e avance de nível.
+            </p>
+
+            <button id="botao-iniciar">Começar jogo</button>
+        </section>
+
+        <section id="tela-jogo" class="tela escondido">
+
+            <header class="cabecalho">
+                <span id="nivel">Nível 1</span>
+                <span id="pontuacao">⭐ 0 pontos</span>
+            </header>
+
+            <div class="progresso">
+                <div id="barra-progresso"></div>
+            </div>
+
+            <p id="numero-pergunta">Pergunta 1 de 10</p>
+
+            <h2 id="pergunta">
+                Quanto é 5 + 5?
+            </h2>
+
+            <div id="alternativas" class="alternativas">
+                <!-- Alternativas criadas pelo JavaScript -->
+            </div>
+
+            <p id="feedback"></p>
+
+            <button id="botao-proxima" class="escondido">
+                Próxima pergunta
+            </button>
+
+        </section>
+
+        <section id="tela-final" class="tela escondido">
+
+            <div class="icone">🏆</div>
+
+            <h1>Missão concluída!</h1>
+
+            <p id="resultado"></p>
+
+            <p id="mensagem-final"></p>
+
+            <button id="botao-reiniciar">
+                Jogar novamente
+            </button>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
